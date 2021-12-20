@@ -1,0 +1,39 @@
+###
+GET http://localhost:3222/api/users HTTP/1.1
+
+###
+POST http://localhost:3222/api/users HTTP/1.1
+ Content-Type: application/json
+
+ {
+     "nombre": "User",
+     "apellido": "User1",
+     "celular": "3001234567",
+     "pais": "Colombia",
+     "email": "user1@user.com",
+     "password": "12345678",
+     "tipo": "1"
+ }
+
+###
+GET http://localhost:3222/api/events HTTP/1.1
+
+###
+POST http://localhost:3222/api/events HTTP/1.1
+ Content-Type: application/json
+
+ {
+     "local": "Patriotas",
+     "visitante": "Barranquilla",
+     "fecha": "25/05/2022",
+     "hora": "22:00"
+ }
+
+###
+PATCH http://localhost:3222/api/users HTTP/1.1
+ Content-Type: application/json
+
+ {
+     "id": "61c01bc2e8ec4a4387aa6fbe",
+     "saldo": 20000
+ }
